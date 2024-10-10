@@ -1,0 +1,7 @@
+.homepage-background {
+    background-image: url('./assets/workFit.jpg');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

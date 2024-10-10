@@ -1,9 +1,14 @@
+import NavBar from "./NavBar"
+import '../App.css'
 
 
-const homePage = () => {
+const HomePage = () => {
   return (
-    <div></div>
+    <>
+      <NavBar />
+      <div className="homepage-background"></div>
+    </>
   )
 }
 
-export default homePage
+export default HomePage
