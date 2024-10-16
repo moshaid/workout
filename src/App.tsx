@@ -1,9 +1,13 @@
-import HomePage from './componenets/HomePage';
+// import HomePage from './componenets/HomePage';
+// import LoginPage from './componenets/LoginPage';
+import SignUp from './componenets/SignUp';
 
 function App() {
   return (
     <>
-      <HomePage />
+      {/* <HomePage /> */}
+      {/* <LoginPage /> */}
+      <SignUp />
     </>
   );
 }
