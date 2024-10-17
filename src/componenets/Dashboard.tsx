@@ -1,17 +1,25 @@
-import { Grid, GridItem, Show } from "@chakra-ui/react";
-
+import { Grid, GridItem, HStack, Image, Text, Show } from "@chakra-ui/react";
+import logo from "../assets/fitnessLogo.webp";
 
 const Dashboard = () => {
-  return <Grid templateAreas={{
-    base: `"nav" "main"`,
-    lg:    `"nav nav" "aside  main"`
-  }}>
-    <GridItem area='nav' bg='coral'>Nav</GridItem>
-    <Show above="lg">
-    <GridItem area='aside' bg='gold'>Aside</GridItem>
-    </Show>
-    <GridItem area='main' bg='dodgerblue'>Main</GridItem>
-  </Grid>;
+  return (
+    <Grid
+      templateAreas={`"aside  main"`}
+       gridTemplateColumns={"250px"}
+    >
+      <GridItem area="aside" bg="#28488e" color="white" p='6' h='100vh'>
+        <HStack justifyContent='center'>
+          <Image src={logo} boxSize="30px" />
+          <Text fontSize="20px" as="b">
+            FitHub Demo
+          </Text>
+        </HStack>
+      </GridItem>
+      <GridItem area="main" p='6'>
+        Main
+      </GridItem>
+    </Grid>
+  );
 };
 
 export default Dashboard;
