@@ -2,7 +2,8 @@
 // import LoginPage from './componenets/LoginPage';
 // import SignUp from './componenets/SignUp';
 
-import Dashboard from "./componenets/Dashboard";
+// import Dashboard from "./componenets/Dashboard";
+import Timer from "./componenets/Timer";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       {/* <HomePage /> */}
       {/* <LoginPage /> */}
       {/* <SignUp /> */}
-      <Dashboard />
+      {/* <Dashboard /> */}
+      <Timer />
     </>
   );
 }
