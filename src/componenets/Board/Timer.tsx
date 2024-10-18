@@ -28,10 +28,10 @@ const Timer = () => {
     <Grid templateAreas={`"aside  main"`} gridTemplateColumns={"250px"}>
     <GridItem area="aside" bg="#28488e" color="white" p="6" h="100vh">
           <Text fontSize="20px" as="b">
-            FitHub Demo
+            Monitor Exercise
           </Text>
       </GridItem>
-      <GridItem area="main" p="6">
+      <GridItem area="main">
       <Flex maxW='500px' w='100' bg="#28488e" color="white" p='6' alignItems='center' flexDirection='column' mx='auto'>
         <Text fontSize='2xl' className="display">{formatTime(time)}</Text>
         <Stack spacing={4} direction="row" align="center">
@@ -55,7 +55,6 @@ const Timer = () => {
           </Button>
         </Stack>
       </Flex>
-
       </GridItem>
 
     </Grid>

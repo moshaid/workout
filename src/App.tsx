@@ -3,7 +3,8 @@
 // import SignUp from './componenets/SignUp';
 
 // import Dashboard from "./componenets/Dashboard";
-import Timer from "./componenets/Timer";
+// import Timer from "./componenets/Board/Timer";
+import WorkOutAssist from "./componenets/Board/WorkOutAssist";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <LoginPage /> */}
       {/* <SignUp /> */}
       {/* <Dashboard /> */}
-      <Timer />
+      {/* <Timer /> */}
+      <WorkOutAssist />
     </>
   );
 }
