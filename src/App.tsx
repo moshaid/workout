@@ -3,9 +3,9 @@ import HomePage from "./componenets/HomePage";
 import LoginPage from './componenets/LoginPage';
 import NotFound from "./componenets/NotFound";
 import SignUp from './componenets/SignUp';
-// import Dashboard from "./componenets/Dashboard";
-// import Timer from "./componenets/Board/Timer";
-// import WorkOutAssist from "./componenets/Board/WorkOutAssist";
+import Dashboard from "./componenets/Board/Dashboard";
+import Timer from "./componenets/Board/Timer";
+import WorkOutAssist from "./componenets/Board/WorkOutAssist";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +20,18 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <SignUp />
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />
+  },
+  {
+    path: "/timer",
+    element: <Timer />
+  },
+  {
+    path: "/workout",
+    element: <WorkOutAssist/>
   },
 ]);
 

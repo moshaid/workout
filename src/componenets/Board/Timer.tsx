@@ -1,5 +1,6 @@
 import { GridItem, Button, Flex, Stack, Text, Grid } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import Dashboard from "./Dashboard";
 
 const Timer = () => {
   const [time, setTime] = useState(0);
@@ -38,11 +39,12 @@ const Timer = () => {
   return (
     <>
       <Grid templateAreas={`"aside  main"`} gridTemplateColumns={"250px"}>
-        <GridItem area="aside" bg="#28488e" color="white" p="6" h="100vh">
+        {/* <GridItem area="aside" bg="#28488e" color="white" p="6" h="100vh">
           <Text fontSize="20px" as="b">
             Monitor Exercise
           </Text>
-        </GridItem>
+        </GridItem> */}
+        <Dashboard />
         <GridItem area="main">
           <Flex
             maxW="500px"

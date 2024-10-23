@@ -5,17 +5,19 @@ import {
   Text,
   AspectRatio,
 } from "@chakra-ui/react";
+import Dashboard from "./Dashboard";
 
 const WorkOutAssist = () => {
   return (
     <Grid templateAreas={`"aside  main"`} gridTemplateColumns={"250px"}>
-      <GridItem area="aside" bg="#28488e" color="white" p="6" h="100vh">
+      {/* <GridItem area="aside" bg="#28488e" color="white" p="6" h="100vh">
         <HStack justifyContent="center">
           <Text fontSize="20px" as="b">
             Workout Assistant
           </Text>
         </HStack>
-      </GridItem>
+      </GridItem> */}
+      <Dashboard />
       <GridItem area="main">
         <HStack justifyContent="end" p="6" borderBottom='1px' borderColor='#28488e'>
           <Text fontSize="20px" as="b">
