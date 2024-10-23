@@ -1,66 +1,66 @@
-// import { z } from "zod";
-// import { useForm } from "react-hook-form";
-// import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 
-// const schema = z.object({
-//   email: z.string().email({message: 'Email is required'}),
-//   password: z.string().min(6).max(15)
-// });
+const schema = z.object({
+  email: z.string().email({message: 'Email is required'}),
+  password: z.string().min(6).max(15)
+});
 
-// type userData = z.infer<typeof schema>;
+type userData = z.infer<typeof schema>;
 
-// const LoginPage = () => {
-//   const {
-//     register,
-//     handleSubmit,
-//     formState: { errors },
-//   } = useForm<userData>({ resolver: zodResolver(schema) });
+const LoginPage = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<userData>({ resolver: zodResolver(schema) });
 
-//   return (
-//     <div className="card">
-//     <form
-//       onSubmit={handleSubmit((data) => {
-//         console.log(data);
-//       })}
-//     >
-//       <div className="mb-3">
-//         <label htmlFor="email" className="form-label">
-//           Email address
-//         </label>
-//         <input
-//           {...register("email")}
-//           id="email"
-//           type="text"
-//           className="form-control"
-//         />
-//         {errors.email && <p className="text-danger">{errors.email.message}</p>}
-//       </div>
+  return (
+    <div className="card">
+    <form
+      onSubmit={handleSubmit((data) => {
+        console.log(data);
+      })}
+    >
+      <div className="mb-3">
+        <label htmlFor="email" className="form-label">
+          Email address
+        </label>
+        <input
+          {...register("email")}
+          id="email"
+          type="text"
+          className="form-control"
+        />
+        {errors.email && <p className="text-danger">{errors.email.message}</p>}
+      </div>
 
-//       <div className="mb-3">
-//         <label htmlFor="password" className="form-label">
-//           Password
-//         </label>
-//         <input
-//           {...register("password")}
-//           id="password"
-//           type="password"
-//           className="form-control"
-//         />
-//         {errors.password && (
-//           <p className="text-danger">{errors.password.message}</p>
-//         )}
-//       </div>
+      <div className="mb-3">
+        <label htmlFor="password" className="form-label">
+          Password
+        </label>
+        <input
+          {...register("password")}
+          id="password"
+          type="password"
+          className="form-control"
+        />
+        {errors.password && (
+          <p className="text-danger">{errors.password.message}</p>
+        )}
+      </div>
 
-//       <button className="btn btn-primary" type="submit">
-//         Submit
-//       </button>
-//     </form>
+      <button className="btn btn-primary" type="submit">
+        Submit
+      </button>
+    </form>
 
-//     </div>
-//   );
-// };
+    </div>
+  );
+};
 
-// export default LoginPage;
+export default LoginPage;
 
 // import { z } from "zod";
 // import { useForm } from "react-hook-form";

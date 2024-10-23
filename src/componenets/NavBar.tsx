@@ -1,6 +1,7 @@
 import { Flex, HStack, Image, Link, Text } from "@chakra-ui/react";
 import logo from "../assets/fitnessLogo.webp";
 import ColorModeSwitch from "./ColorModeSwitch";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -11,8 +12,8 @@ const NavBar = () => {
       </HStack>
       <Flex justifyContent="center" fontSize='20px' as='b'>
         <Link>Store</Link>
-        <Link mx='4'>Login</Link>
-        <Link>SigUp</Link>
+        <Link mx='4'> <NavLink to={`/login`}>Login</NavLink></Link>
+        <NavLink to={`/signup`}>SigUp</NavLink>
       </Flex>
       <ColorModeSwitch />
     </Flex>
